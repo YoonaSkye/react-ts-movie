@@ -1,6 +1,7 @@
 type Category = 'movie' | 'tv';
 type MovieType = 'upcoming' | 'popular' | 'top_rated';
 type TvType = 'popular' | 'top_rated' | 'on_the_air';
+type MType = 'popular' | 'top_rated';
 
 interface MovieObject {
   adult: boolean;
@@ -54,6 +55,7 @@ interface List<T> {
 
 export {
   Category,
+  MType,
   MovieType,
   TvType,
   MovieObject,
