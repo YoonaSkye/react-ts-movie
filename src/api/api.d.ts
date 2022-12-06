@@ -49,7 +49,7 @@ interface VideoObject {
 }
 
 interface List<T> {
-  results: Partial<T>;
+  results: T[];
 }
 
 export {
