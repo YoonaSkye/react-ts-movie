@@ -9,11 +9,17 @@ type HeroSlideItemProp = {
 };
 
 const HeroSlideItem = ({ item, clssName }: HeroSlideItemProp) => {
+  const background = apiConfig.originalImage(
+    item.backdrop_path ? item.backdrop_path : item.poster_path
+  );
   return (
-    <div className="hero-slide__item">
+    <div
+      className={`hero-slide__item ${clssName}`}
+      style={{ backgroundImage: `url(${background})` }}
+    >
       <div className="hero-slide__item__content container">
         <div className="hero-slide__item__content__info">
-          <div className="tit">{item.title}</div>
+          <div className="title">{item.title}</div>
           <div className="overview">{item.overview}</div>
           <div className="btns">
             <button>Watch Now</button>
