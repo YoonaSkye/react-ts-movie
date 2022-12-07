@@ -1,4 +1,3 @@
-import React from 'react';
 import HeroSlide from '../components/hero-slide/HeroSlide';
 import MovieSlide from '../components/movie-slide/MovieSlide';
 

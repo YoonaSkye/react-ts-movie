@@ -1,6 +1,5 @@
 @use './sass/' as *;
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
 
 * {
   padding: 0;
@@ -13,11 +12,11 @@ html {
   font-size: 100%;
 
   @include tablet {
-      font-size: 80%;
+    font-size: 80%;
   }
 
   @include mobile {
-      font-size: 60%;
+    font-size: 60%;
   }
 }
 
@@ -30,7 +29,7 @@ body {
   color: $txt-color;
 
   @include mobile {
-      margin-bottom: 3rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -41,7 +40,7 @@ a {
 
 @media (hover: hover) {
   a:hover {
-      color: $main-color;
+    color: $main-color;
   }
 }
 
@@ -80,5 +79,5 @@ iframe {
 }
 
 .section__header {
-  @include flex(center, space-between);
+  @include flex(space-between, center);
 }

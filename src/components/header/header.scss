@@ -23,7 +23,13 @@
   left: 0;
   width: 100%;
   z-index: 99;
-// 处理header吸顶的css效果
+  // 处理header吸顶的css效果
+  transition: height 0.3s ease, background-color 0.3s ease;
+
+  &.shrink {
+    height: $header-shrink-height;
+    background-color: $body-bg;
+  }
 
   &__wrap {
     @include flex(space-between, center);
@@ -49,7 +55,7 @@
       position: relative;
 
       &::after {
-        content: "";
+        content: '';
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -78,8 +84,6 @@
       box-shadow: $box-shadow;
 
       @include flex(space-between, center);
-
-   
     }
   }
 }

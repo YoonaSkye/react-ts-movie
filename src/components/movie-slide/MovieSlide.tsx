@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 // types
 import { Category, MType } from '.././../api/api';
 
@@ -24,7 +25,7 @@ const MovieSlide = () => {
         <div key={item.name} className="section mb-3">
           <div className="section__header mb-2">
             <h2>{item.name}</h2>
-            {/* view more 按钮 */}
+            <Link to={`/${item.category}`}>View More</Link>
           </div>
           <MovieList category={item.category} type={item.type} />
         </div>
