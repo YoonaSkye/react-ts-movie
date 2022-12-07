@@ -51,6 +51,15 @@ interface VideoObject {
   id: string;
 }
 
+interface Cast {
+  name: string;
+  profile_path: string;
+}
+interface CastsObject {
+  id: number;
+  cast: Cast[];
+}
+
 interface List<T> {
   results: T[];
 }
@@ -64,5 +73,7 @@ export {
   TvObject,
   VideoObject,
   ItemsType,
+  Cast,
+  CastsObject,
   List,
 };
