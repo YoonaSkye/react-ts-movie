@@ -9,14 +9,14 @@ import tmdbApi from '../../api/tmdbApi';
 // styles
 import './movie-list.scss';
 
-type MovieListProp = {
+type MovieListProps = {
   category: Category;
   type: MType;
 };
 
 type ItemsType = MovieObject[] | TvObject[] | null;
 
-const MovieList = ({ category, type }: MovieListProp) => {
+const MovieList = ({ category, type }: MovieListProps) => {
   const [items, setItems] = useState<ItemsType>(null);
 
   useEffect(() => {

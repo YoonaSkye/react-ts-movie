@@ -3,6 +3,8 @@ type MovieType = 'upcoming' | 'popular' | 'top_rated';
 type TvType = 'popular' | 'top_rated' | 'on_the_air';
 type MType = 'popular' | 'top_rated';
 
+type ItemsType = MovieObject[] | TvObject[] | null;
+
 interface MovieObject {
   adult: boolean;
   backdrop_path: string;
@@ -61,5 +63,6 @@ export {
   MovieObject,
   TvObject,
   VideoObject,
+  ItemsType,
   List,
 };
