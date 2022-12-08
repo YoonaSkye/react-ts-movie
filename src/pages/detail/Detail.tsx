@@ -21,7 +21,7 @@ const Detail = () => {
       let response = await tmdbApi.detail(category as Category, id as string, {
         params,
       });
-      console.log(response);
+      // console.log(response);
       setItem(response);
       window.scrollTo(0, 0);
     };
