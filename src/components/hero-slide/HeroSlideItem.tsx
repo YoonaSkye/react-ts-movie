@@ -25,11 +25,9 @@ const HeroSlideItem = ({ item, clssName }: HeroSlideItemProp) => {
           <div className="title">{item.title}</div>
           <div className="overview">{item.overview}</div>
           <div className="btns">
-            <Button onClick={() => navigate(`/movie/${item.id}`)}>
-              Watch Now
-            </Button>
+            <Button onClick={() => navigate(`/movie/${item.id}`)}>简介</Button>
             {/* 新增trailer窗口预览视频 */}
-            <OutlineButton>Watch Trailer</OutlineButton>
+            <OutlineButton>预告</OutlineButton>
           </div>
         </div>
         <div className="hero-slide__item__content__poster">

@@ -27,7 +27,7 @@ const MovieSlide = () => {
           <div className="section__header mb-2">
             <h2>{item.name}</h2>
             <Link to={`/${item.category}`}>
-              <OutlineButton className="small">View More</OutlineButton>
+              <OutlineButton className="small">更多</OutlineButton>
             </Link>
           </div>
           <MovieList category={item.category} type={item.type} />
