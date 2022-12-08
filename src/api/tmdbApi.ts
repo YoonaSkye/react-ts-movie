@@ -23,7 +23,10 @@ const tmdbApi = {
     const url = cate + '/' + id + '/videos';
     return axiosClient.get(url, { params: {} });
   },
-  search: (cate: Category, params: {}) => {
+  search: (
+    cate: Category,
+    params: {}
+  ): Promise<List<MovieObject | TvObject>> => {
     const url = 'search/' + cate;
     return axiosClient.get(url, params);
   },

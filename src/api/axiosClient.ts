@@ -13,7 +13,7 @@ const axiosClient = axios.create({
       queryString.stringify({
         ...params,
         api_key: apiConfig.apiKey,
-        // language: 'zh',
+        language: 'zh',
       }),
   },
 });
