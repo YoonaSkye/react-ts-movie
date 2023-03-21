@@ -24,10 +24,11 @@ const MovieCard = ({ item, category }: MovieCardProp) => {
 
   return (
     <Link to={link}>
-      <div
-        className="movie-card"
-        style={{ backgroundImage: `url(${bg})` }}
-      ></div>
+      {/* <div className="movie-card" style={{ backgroundImage: `url(${bg})` }}> */}
+      <div className="movie-card">
+        <img src={bg} alt="" loading="lazy" />
+      </div>
+
       <h3>{title}</h3>
     </Link>
   );

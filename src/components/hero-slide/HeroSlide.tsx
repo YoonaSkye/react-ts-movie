@@ -37,7 +37,7 @@ const HeroSlide = () => {
         spaceBetween={0}
         slidesPerView={1}
         modules={[Autoplay]}
-        autoplay={{ delay: 50000, disableOnInteraction: false }}
+        autoplay={{ delay: 5000, disableOnInteraction: false }}
       >
         {movieItems &&
           movieItems.map((item, i) => (
